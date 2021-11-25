@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-stretch: normal;
+  outline: none;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header .header-main {
+  position: relative;
+  width: 100%;
+}
+.header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header-top .header-top-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header-top .header-top-logo img {
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .header .header-top .header-top__center {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: none;
+  }
+}
+@media (max-width: 992px) and (max-width: 768px) {
+  .header .header-top .header-top__center {
+    top: 48px;
+  }
+}
+.header .header-top .header-top__center .header-top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .header .header-top .header-top__center .header-top-menu {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    padding: 20px;
+    color: #485C5B;
+  }
+}
+.header .header-top .header-top__center .header-top-menu a {
+  margin: 0 30px;
+  color: white;
+}
+@media (max-width: 1196px) {
+  .header .header-top .header-top__center .header-top-menu a {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  .header .header-top .header-top__center .header-top-menu a {
+    margin-bottom: 20px;
+    color: #485C5B;
+  }
+}
+.header .header-top .header-top__center .header-top-menu .register {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: #F27F1B;
+  color: white;
+}
+
+.banner {
+  background-image: url("/media/banner.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 770px) {
+  .banner {
+    height: auto;
+    padding-top: 100px;
+  }
+}
+.banner .titulo-principal-banner h1 {
+  color: #F27F1B;
+}
+.banner .titulo-principal-banner h1 span {
+  color: white;
+}
+.banner .text-banner {
+  font-size: 12px;
+  color: white;
+  text-align: justify;
+}
+.banner .imagen-banner {
+  position: relative;
+  bottom: -100px;
+}
+@media (max-width: 992px) {
+  .banner .imagen-banner {
+    bottom: -100px;
+  }
+}
+.tarjeta {
+  position: relative;
+}
+.tarjeta .icon {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 20px;
+}
+.tarjeta .icon svg {
+  color: #F27F1B;
+}
+.tarjeta .icon span {
+  color: white;
+  font-weight: bold;
+}
+
+.destinations {
+  padding: 100px 0;
+}
+.destinations .titulo-destinations h2 {
+  color: #485C5B;
+}
+.destinations .titulo-destinations h2 span {
+  color: #F27F1B;
+}
+.destinations .descrpcion-tarjeta p {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 20px 0;
+  text-align: justify;
+  color: #485C5B;
+  margin-bottom: 30px;
+}
+.destinations .imagen-tarjeta img {
+  border-radius: 15px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.destinations .titulo-tarjeta a {
+  color: #485C5B;
+  font-size: 25px;
+  font-weight: bold;
+}
+.destinations .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 20px 0;
+  font-size: 35px;
+}
+.destinations .price p {
+  font-weight: 700;
+}
+.destinations .price p span {
+  font-weight: 700;
+  color: #F27F1B;
+}
+.destinations .boton-tarjeta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.destinations .boton-tarjeta a {
+  border: 1px solid #F27F1B;
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: #F27F1B;
+  color: white;
+  font-size: 20px;
+}
+.destinations .boton-tarjeta a:hover {
+  background-color: white;
+  color: #F27F1B;
+}
+
+.stories {
+  margin-bottom: 60px;
+  background-color: #f1f1f1;
+  padding: 100px 0;
+}
+.stories .stories__titulo h2 {
+  color: #485C5B;
+}
+.stories .stories__titulo h2 span {
+  color: #F27F1B;
+}
+.stories .stories-text {
+  margin: 30px 0 80px 0;
+  text-align: justify;
+  color: #485C5B;
+}
+.stories .estadistics h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #F27F1B;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.stories .estadistics p {
+  text-align: start;
+  color: #052c2a;
+}
+
+.control-button {
+  display: none;
+}
+@media (max-width: 992px) {
+  .control-button {
+    display: block;
+  }
+}
+.control-button span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F27F1B;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.control-button span svg {
+  font-size: 20px;
+  color: white;
+}
+
+.mapa {
+  position: relative;
+}
+.mapa .titulo-mapa {
+  color: #485C5B;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.mapa .titulo-mapa h3 span {
+  color: #F27F1B;
+}
+.mapa .texto-mapa p {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.mapa .iconos-mapa {
+  position: absolute;
+  height: 60px;
+  width: 80px;
+  border-radius: 10px;
+  padding: 8px 0;
+}
+.mapa .iconos-mapa .iconos-mapa__imagen {
+  height: 35px;
+  padding: 0 20px;
+}
+.mapa .iconos-mapa .iconos-mapa__imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.mapa .iconos-mapa .titulo-icono {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.mapa .ubicacion-1 {
+  bottom: 30%;
+  left: 19%;
+}
+@media (max-width: 772px) {
+  .mapa .ubicacion-1 {
+    display: none;
+  }
+}
+.mapa .ubicacion-2 {
+  bottom: 46%;
+  left: 17%;
+}
+@media (max-width: 772px) {
+  .mapa .ubicacion-2 {
+    display: none;
+  }
+}
+.mapa .ubicacion-3 {
+  bottom: 58%;
+  left: 44%;
+}
+@media (max-width: 772px) {
+  .mapa .ubicacion-3 {
+    display: none;
+  }
+}
+.mapa .control-mapa {
+  width: 700px;
+  position: relative;
+}
+@media (max-width: 772px) {
+  .mapa .control-mapa {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .mapa .control-mapa {
+    width: 300px;
+  }
+}
+.mapa .control-mapa .mapa-imagen {
+  width: 700px;
+}
+@media (max-width: 772px) {
+  .mapa .control-mapa .mapa-imagen {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .mapa .control-mapa .mapa-imagen {
+    width: 300px;
+  }
+}
+
+.letra-titulos {
+  font-family: "Alfa Slab One", cursive;
+}
